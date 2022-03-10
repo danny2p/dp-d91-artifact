@@ -4,9 +4,4 @@ api_version: 1
 php_version: 7.4
 search:
   version: 8
-workflows:
-  sync_code:
-    after:
-      - type: webphp
-        description: Push back to github upon Pantheon code sync.
-        script: private/scripts/sync_code_direct_pushback.php
+build_step: false
